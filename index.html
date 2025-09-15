@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBS Timer Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="me" href="https://t.me/w3mppy" target="_blank" rel="noopener noreferrer">
+        <img src="icons/tgc.png" alt="">
+    </a>
+    <div class="main_block">
+        <header>
+            <img src="icons/bbs.png" alt="bbs" width="75">
+            <h1 class="title">Timer Generator</h1>
+        </header>
+        <main class="main">
+            <div class="start_time_block time_block">
+                <p>Start time: </p>
+                <div class="inputs">
+                    <div class="hours time">
+                        <input class="time_input off" id="startHours" type="number" min="0" max="23" aria-label="startHours" value="00">
+                        <input type="checkbox" id="hourCheckbox" class="time_checkbox" checked aria-label="startHours">
+                    </div>
+                    <span>:</span>
+                    <div class="minutes time">
+                        <input class="time_input" id="startMinutes" type="number" min="0" max="59" aria-label="startMinutes" value="00">
+                        <input type="checkbox" id="minuteCheckbox" class="time_checkbox" aria-label="startMinutes">
+                    </div>
+                    <span>:</span>
+                    <div class="seconds time">
+                        <input class="time_input" id="startSeconds" type="number" min="0" max="59" aria-label="startSeconds" value="00">
+                        <input type="checkbox" id="secondCheckbox" class="time_checkbox" aria-label="startSeconds">
+                    </div>
+                </div>
+            </div>
+            <div class="end_time_block time_block">
+                <p>End time: </p>
+                <div class="inputs">
+                    <div class="hours time">
+                        <input class="time_input off" id="endHours" type="number" min="0" max="23" aria-label="endHours" value="00">
+                        <input type="checkbox" id="hourCheckbox" class="time_checkbox" checked aria-label="endHours">
+                    </div>
+                    <span>:</span>
+                    <div class="minutes time">
+                        <input class="time_input" id="endMinutes" type="number" min="0" max="59" aria-label="endMinutes" value="04">
+                        <input type="checkbox" id="minuteCheckbox" class="time_checkbox" aria-label="endMinutes">
+                    </div>
+                    <span>:</span>
+                    <div class="seconds time">
+                        <input class="time_input" id="endSeconds" type="number" min="0" max="59" aria-label="endSeconds" value="20">
+                        <input type="checkbox" id="secondCheckbox" class="time_checkbox" aria-label="endSeconds">
+                    </div>
+                </div>
+            </div>
+            <button class="generate_timer_btn" id="generateTimerBtn">GENERATE</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
