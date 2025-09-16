@@ -143,15 +143,15 @@ table {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background: conic-gradient(from var(--gradient-angle, 135deg),
-            rgb(231, 64, 92),
-            rgb(54, 71, 228),
-            rgb(59, 183, 233),
-            rgb(176, 255, 139),
-            rgb(255, 235, 59),
-            rgb(255, 123, 0),
-            rgb(231, 64, 92));
+            rgb(255, 79, 109),
+            rgb(77, 95, 255),
+            rgb(80, 205, 255),
+            rgb(162, 255, 118),
+            rgb(255, 236, 62),
+            rgb(255, 156, 63),
+            rgb(255, 79, 109));
     min-height: 100vh;
     text-align: center;
     animation: rotate 10s linear infinite;
@@ -273,13 +273,13 @@ header {
 
 .time_checkbox:checked {
     background: conic-gradient(from var(--gradient-angle, 135deg),
-            rgb(231, 64, 92),
-            rgb(54, 71, 228),
-            rgb(59, 183, 233),
-            rgb(176, 255, 139),
-            rgb(255, 235, 59),
-            rgb(255, 123, 0),
-            rgb(231, 64, 92));
+            rgb(255, 79, 109),
+            rgb(77, 95, 255),
+            rgb(80, 205, 255),
+            rgb(162, 255, 118),
+            rgb(255, 236, 62),
+            rgb(255, 156, 63),
+            rgb(255, 79, 109));
     animation: rotate 4s linear infinite;
     border: none;
 }
@@ -308,15 +308,15 @@ header {
     border-radius: 10px;
     border: none;
     background: conic-gradient(from var(--gradient-angle, 135deg),
-            rgb(231, 64, 92),
-            rgb(54, 71, 228),
-            rgb(59, 183, 233),
-            rgb(176, 255, 139),
-            rgb(255, 235, 59),
-            rgb(255, 123, 0),
-            rgb(231, 64, 92));
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
-    font-weight: 700;
+            rgb(255, 79, 109),
+            rgb(77, 95, 255),
+            rgb(80, 205, 255),
+            rgb(162, 255, 118),
+            rgb(255, 236, 62),
+            rgb(255, 156, 63),
+            rgb(255, 79, 109));
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+    font-weight: 900;
     color: var(--dark-color);
     cursor: pointer;
     transition: transform 0.2s;
@@ -332,13 +332,13 @@ header {
     bottom: 0;
     border-radius: 10px;
     background: conic-gradient(from var(--gradient-angle, 135deg),
-            rgb(231, 64, 92),
-            rgb(54, 71, 228),
-            rgb(59, 183, 233),
-            rgb(176, 255, 139),
-            rgb(255, 235, 59),
-            rgb(255, 123, 0),
-            rgb(231, 64, 92));
+            rgb(255, 79, 109),
+            rgb(77, 95, 255),
+            rgb(80, 205, 255),
+            rgb(162, 255, 118),
+            rgb(255, 236, 62),
+            rgb(255, 156, 63),
+            rgb(255, 79, 109));
     filter: blur(15px);
     transform: translateY(0px) scale(0.95);
     z-index: -1;
