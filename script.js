@@ -50,7 +50,6 @@ generateBtn.addEventListener('click', () => {
         return;
     }
     const timerJson = generateTimer(startTime, endTime);
-    console.log(JSON.stringify(timerJson, null, 2)); // For debugging: log the result
     downloadJson(timerJson, `bbs_timer_${getValue('.start_time_block', 'Hours')}${getValue('.start_time_block', 'Minutes')}${getValue('.start_time_block', 'Seconds')}_to_${getValue('.end_time_block', 'Hours')}${getValue('.end_time_block', 'Minutes')}${getValue('.end_time_block', 'Seconds')}.json`);
 });
 
