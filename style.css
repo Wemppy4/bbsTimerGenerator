@@ -1,55 +1,139 @@
 /* reset */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+    list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-*, *::before, *::after {
-	box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 /* styles */
@@ -60,16 +144,14 @@ table {
 
 body {
     font-family: "Roboto", sans-serif;
-    background: conic-gradient(
-        from var(--gradient-angle, 135deg), 
-        rgb(231, 64, 92) ,
-        rgb(54, 71, 228),
-        rgb(59, 183, 233),
-        rgb(176, 255, 139),
-        rgb(255, 235, 59),
-        rgb(255, 123, 0),
-        rgb(231, 64, 92) 
-    );
+    background: conic-gradient(from var(--gradient-angle, 135deg),
+            rgb(231, 64, 92),
+            rgb(54, 71, 228),
+            rgb(59, 183, 233),
+            rgb(176, 255, 139),
+            rgb(255, 235, 59),
+            rgb(255, 123, 0),
+            rgb(231, 64, 92));
     min-height: 100vh;
     text-align: center;
     animation: rotate 10s linear infinite;
@@ -86,7 +168,8 @@ body {
     width: 50vh;
     border-radius: 25px;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-self: center;
@@ -107,7 +190,7 @@ header{
     gap: 20px;
 }
 
-.time_block p{
+.time_block p {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: 300;
@@ -130,10 +213,11 @@ header{
     pointer-events: none;
 }
 
-.inputs{
+.inputs {
     display: flex;
     gap: 5px;
 }
+
 .inputs span {
     margin-top: 15px;
     opacity: .5;
@@ -188,30 +272,29 @@ header{
 }
 
 .time_checkbox:checked {
-    background: conic-gradient(
-        from var(--gradient-angle, 135deg), 
-        rgb(231, 64, 92) ,
-        rgb(54, 71, 228),
-        rgb(59, 183, 233),
-        rgb(176, 255, 139),
-        rgb(255, 235, 59),
-        rgb(255, 123, 0),
-        rgb(231, 64, 92) 
-    ); 
+    background: conic-gradient(from var(--gradient-angle, 135deg),
+            rgb(231, 64, 92),
+            rgb(54, 71, 228),
+            rgb(59, 183, 233),
+            rgb(176, 255, 139),
+            rgb(255, 235, 59),
+            rgb(255, 123, 0),
+            rgb(231, 64, 92));
     animation: rotate 4s linear infinite;
     border: none;
 }
 
 @property --gradient-angle {
-  syntax: '<angle>';
-  inherits: false;
-  initial-value: 135deg;
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 135deg;
 }
 
 @keyframes rotate {
     from {
         --gradient-angle: 135deg;
     }
+
     to {
         --gradient-angle: 495deg;
     }
@@ -224,16 +307,14 @@ header{
     padding: 12px 27px;
     border-radius: 10px;
     border: none;
-    background: conic-gradient(
-        from var(--gradient-angle, 135deg), 
-        rgb(231, 64, 92) ,
-        rgb(54, 71, 228),
-        rgb(59, 183, 233),
-        rgb(176, 255, 139),
-        rgb(255, 235, 59),
-        rgb(255, 123, 0),
-        rgb(231, 64, 92) 
-    ); 
+    background: conic-gradient(from var(--gradient-angle, 135deg),
+            rgb(231, 64, 92),
+            rgb(54, 71, 228),
+            rgb(59, 183, 233),
+            rgb(176, 255, 139),
+            rgb(255, 235, 59),
+            rgb(255, 123, 0),
+            rgb(231, 64, 92));
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     font-weight: 700;
     color: var(--dark-color);
@@ -250,16 +331,14 @@ header{
     right: 0;
     bottom: 0;
     border-radius: 10px;
-    background: conic-gradient(
-        from var(--gradient-angle, 135deg), 
-        rgb(231, 64, 92) ,
-        rgb(54, 71, 228),
-        rgb(59, 183, 233),
-        rgb(176, 255, 139),
-        rgb(255, 235, 59),
-        rgb(255, 123, 0),
-        rgb(231, 64, 92) 
-    );
+    background: conic-gradient(from var(--gradient-angle, 135deg),
+            rgb(231, 64, 92),
+            rgb(54, 71, 228),
+            rgb(59, 183, 233),
+            rgb(176, 255, 139),
+            rgb(255, 235, 59),
+            rgb(255, 123, 0),
+            rgb(231, 64, 92));
     filter: blur(15px);
     transform: translateY(0px) scale(0.95);
     z-index: -1;
@@ -289,4 +368,31 @@ header{
     font-weight: 500;
     font-size: 18px;
     color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-height: 740px) {
+    .main_block {
+        width: 60vh;
+        min-height: 70vh;
+    }
+}
+
+@media (max-height: 620px) {
+    .main_block {
+        min-height: 80vh;
+        width: 70vh;
+        top: 10px;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .main_block {
+        width: 95vw;
+    }
+
+    .me img {
+        right: 50%;
+        transform: translateX(50%);
+    }
 }
